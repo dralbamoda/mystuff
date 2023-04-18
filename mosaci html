@@ -1,73 +1,71 @@
+New chat
+New chat
+HTML Code for Mosaic Homepage.
+Clear conversations
+Upgrade to PlusNEW
+Settings
+Get help
+Log out
+John Scott
+write me a rsposive multisize image only mosacic html page
+
+Sure, here is an example of a responsive multisize image mosaic HTML page:
+
+php
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Mosaic Home Page</title>
+	<title>Responsive Image Mosaic</title>
 	<style>
-		/* Style for the mosaic container */
-		.mosaic-container {
+		.container {
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: space-between;
-			align-items: stretch;
-			gap: 10px;
-			padding: 20px;
-			background-color: #f1f1f1;
-			box-sizing: border-box;
-		}
-		/* Style for each mosaic item */
-		.mosaic-item {
-			display: flex;
-			flex-direction: column;
 			justify-content: center;
-			align-items: center;
-			width: calc(33.33% - 10px);
-			height: 250px;
-			background-color: #ffffff;
-			border-radius: 5px;
-			box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-			box-sizing: border-box;
 		}
-		/* Style for mosaic item titles */
-		.mosaic-item h2 {
-			margin: 0;
-			font-size: 24px;
-			color: #333333;
-			text-align: center;
+
+		.box {
+			margin: 10px;
+			flex: 1;
 		}
-		/* Style for mosaic item images */
-		.mosaic-item img {
+
+		img {
 			max-width: 100%;
-			max-height: 100%;
-			object-fit: contain;
-			margin-bottom: 10px;
+			height: auto;
+		}
+
+		@media screen and (max-width: 767px) {
+			.box {
+				flex-basis: 50%;
+			}
+		}
+
+		@media screen and (max-width: 479px) {
+			.box {
+				flex-basis: 100%;
+			}
 		}
 	</style>
 </head>
 <body>
-	<div class="mosaic-container">
-		<div class="mosaic-item">
-			<img src="https://via.placeholder.com/150" alt="Mosaic Item 1">
-			<h2>Mosaic Item 1</h2>
+	<div class="container">
+		<div class="box">
+			<img src="image-1.jpg" alt="Image 1">
 		</div>
-		<div class="mosaic-item">
-			<img src="https://via.placeholder.com/150" alt="Mosaic Item 2">
-			<h2>Mosaic Item 2</h2>
+		<div class="box">
+			<img src="image-2.jpg" alt="Image 2">
 		</div>
-		<div class="mosaic-item">
-			<img src="https://via.placeholder.com/150" alt="Mosaic Item 3">
-			<h2>Mosaic Item 3</h2>
+		<div class="box">
+			<img src="image-3.jpg" alt="Image 3">
 		</div>
-		<div class="mosaic-item">
-			<img src="https://via.placeholder.com/150" alt="Mosaic Item 4">
-			<h2>Mosaic Item 4</h2>
+		<div class="box">
+			<img src="image-4.jpg" alt="Image 4">
 		</div>
-		<div class="mosaic-item">
-			<img src="https://via.placeholder.com/150" alt="Mosaic Item 5">
-			<h2>Mosaic Item 5</h2>
+		<div class="box">
+			<img src="image-5.jpg" alt="Image 5">
 		</div>
-		<div class="mosaic-item">
-			<img src="https://via.placeholder.com/150" alt="Mosaic Item 6">
-			<h2>Mosaic Item 6</h2>
+		<div class="box">
+			<img src="image-6.jpg" alt="Image 6">
 		</div>
 	</div>
 </body>
