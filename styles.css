@@ -1,1 +1,287 @@
-
+<style>
+  .div {
+    display: flex;
+    flex-direction: column;
+    max-width: 1980px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  .div-2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 1158px;
+    padding-top: 30px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+  }
+  .div-3 {
+    display: flex;
+  }
+  @media (max-width: 999px) {
+    .div-3 {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: calc(100.87% - 0px);
+    margin-left: 0px;
+  }
+  @media (max-width: 999px) {
+    .column {
+      width: 100%;
+    }
+  }
+  .div-4 {
+    max-width: 1038px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 198.43136596679688px;
+    line-height: 89.99999761581421%;
+    letter-spacing: -10px;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+  }
+  .div-5 {
+    display: flex;
+    flex-direction: column;
+    max-width: 1980px;
+    margin-top: 60px;
+    padding-top: 30px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+    padding-left: 60px;
+  }
+  .div-6 {
+    display: flex;
+  }
+  @media (max-width: 999px) {
+    .div-6 {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+  .column-2 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: calc(33.88% - 13.333333333333334px);
+    margin-left: 0px;
+  }
+  @media (max-width: 999px) {
+    .column-2 {
+      width: 100%;
+    }
+  }
+  .div-7 {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .div-8 {
+    display: flex;
+    align-self: stretch;
+    position: relative;
+    min-width: 20px;
+    min-height: 20px;
+    flex-direction: column;
+    max-width: 600px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+  .image {
+    object-fit: contain;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .image-sizer {
+    width: 100%;
+    padding-top: 100%;
+    pointer-events: none;
+    font-size: 0;
+  }
+  .div-9 {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .usp-content-main-label-make {
+    max-width: 447.22222900390625px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 24px;
+    line-height: 129.99999523162842%;
+    letter-spacing: -0.3353694975376129px;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+  }
+  .lorem-ipsum-dolor-sit-amet-co {
+    max-width: 385.42425537109375px;
+    margin-top: 13px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 18px;
+    line-height: 129.99999523162842%;
+    letter-spacing: -0.3353694975376129px;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+  }
+  .div-10 {
+    display: flex;
+    flex-direction: row;
+    max-width: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    border-radius: 80px;
+    background-color: rgba(219, 219, 219, 1);
+    color: rgba(0, 0, 0, 1);
+    font-size: 18px;
+    line-height: 129.99999523162842%;
+    letter-spacing: -0.3353694975376129px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+  }
+  .column-3 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: calc(33.88% - 13.333333333333334px);
+    margin-left: 20px;
+  }
+  @media (max-width: 999px) {
+    .column-3 {
+      width: 100%;
+    }
+  }
+  .div-11 {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .div-12 {
+    display: flex;
+    align-self: stretch;
+    position: relative;
+    min-width: 20px;
+    min-height: 20px;
+    flex-direction: column;
+    max-width: 600px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+  .div-13 {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .div-14 {
+    display: flex;
+    flex-direction: row;
+    max-width: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    border-radius: 80px;
+    background-color: rgba(219, 219, 219, 1);
+    color: rgba(0, 0, 0, 1);
+    font-size: 18px;
+    line-height: 129.99999523162842%;
+    letter-spacing: -0.3353694975376129px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+  }
+  .column-4 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: calc(33.88% - 13.333333333333334px);
+    margin-left: 20px;
+  }
+  @media (max-width: 999px) {
+    .column-4 {
+      width: 100%;
+    }
+  }
+  .div-15 {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .div-16 {
+    display: flex;
+    align-self: stretch;
+    position: relative;
+    min-width: 20px;
+    min-height: 20px;
+    flex-direction: column;
+    max-width: 600px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+  }
+  .div-17 {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .div-18 {
+    display: flex;
+    flex-direction: row;
+    max-width: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    border-radius: 80px;
+    background-color: rgba(219, 219, 219, 1);
+    color: rgba(0, 0, 0, 1);
+    font-size: 18px;
+    line-height: 129.99999523162842%;
+    letter-spacing: -0.3353694975376129px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+  }
+</style>
